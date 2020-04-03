@@ -1,0 +1,199 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.module-block {
+  background: -webkit-gradient(linear, left top, left bottom, from(#011638), color-stop(#364156), to(#011638));
+  background: linear-gradient(#011638, #364156, #011638);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.856);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.856);
+  width: 30vw;
+  color: white;
+  position: absolute;
+  left: 32vw;
+  top: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px;
+  -webkit-transition: ease-in .4s all;
+  transition: ease-in .4s all;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: rotate(-20deg) skewY(20deg);
+          transform: rotate(-20deg) skewY(20deg);
+  border-radius: 50px 20px 50px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.module-active {
+  height: 10vh;
+  z-index: 10;
+  padding: 40px;
+  opacity: 1;
+  -webkit-transform: rotate(0) skewY(0deg);
+          transform: rotate(0) skewY(0deg);
+}
+
+.module-bg-active {
+  position: absolute;
+  background-color: black;
+  opacity: 0.4;
+  width: 99vw;
+  height: 99vh;
+  top: 0px;
+  z-index: 9;
+}
+
+.module-bg {
+  -webkit-transition: 2s linear all;
+  transition: 2s linear all;
+}
+
+#button {
+  display: block;
+  background-color: white;
+  border: #364156 2px solid;
+  border-radius: 33px 33px 50px 50px;
+  padding: 15px;
+  line-height: 100%;
+}
+
+#button:hover {
+  background-color: #5B6987;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#button:focus {
+  outline: none;
+}
+
+.module__button {
+  background-color: transparent;
+  border: white 1px solid;
+  border-radius: 15px;
+  height: 40px;
+  width: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+  letter-spacing: 2px;
+  color: white;
+  background-color: #24365E;
+  padding: 5px;
+}
+
+.module__button:hover {
+  color: black;
+  -webkit-transition: ease .4s all;
+  transition: ease .4s all;
+  cursor: pointer;
+  background-color: #7f8696;
+}
+
+.module__button:focus {
+  outline: none;
+  border: 2px black solid;
+}
+
+.circle {
+  border: 2px black solid;
+  -ms-flex-negative: 2;
+      flex-shrink: 2;
+  margin-top: 30px;
+  margin-right: 20px;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.circle__button {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: white;
+  border: #364156 2px solid;
+  border-radius: 33px 33px 50px 50px;
+  padding: 15px;
+  line-height: 100%;
+}
+
+.circle__button:hover {
+  background-color: #5B6987;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.circle__button:focus {
+  outline: none;
+}
+
+.circle-red {
+  background-color: red;
+  opacity: 0;
+}
+
+.circle-yellow {
+  background-color: yellow;
+  opacity: 0;
+}
+
+.circle-green {
+  background-color: green;
+  opacity: 0;
+}
+
+.circle-inner {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: cubic-bezier(0.905, 0.85, 0.68, 0.53) 0.5s all;
+  transition: cubic-bezier(0.905, 0.85, 0.68, 0.53) 0.5s all;
+}
+
+.circle--active {
+  opacity: 1;
+}
+
+.circle-container {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=style.css.map */

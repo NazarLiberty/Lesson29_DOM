@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="index.js"></script>
+
+<body>
+    <div class="music" id="music">
+
+    </div>
+    <div id="module-bg" class="module-bg"></div>
+    <button id="button" onclick="clickOpen()">
+        Open
+    </button>
+    <div id="block" class="module-block">
+
+        <p>
+            S'UP
+        </p>
+        <button id="block__button" class="module__button" onclick="clickClose()">Close me</button>
+
+    </div>
+    <div class="circle-container">
+        <div class="circle">
+            <div class="circle-inner circle-red" id="circle-red"></div>
+        </div>
+        <div class="circle">
+            <div class="circle-inner circle-yellow" id="circle-yellow"></div>
+        </div>
+        <div class="circle">
+            <div class="circle-inner circle-green" id="circle-green"></div>
+        </div>
+        <button class="circle__button" id="circle__button" onclick="colorChanger()"> Next color</button>
+    </div>
+</body>
+
+</html>
